@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+    .top{
+      position: relative;
+      left: 35%;
+      top: 50vh;
+      animation-name: top;
+      animation-duration: 5s;
+      animation-timing-function: ease;
+      animation-delay: 1s;
+      animation-direction: reverse;
+    }
+    .left{
+      position: relative;
+      left: 35%;
+      top: 50vh;
+      animation-name: left;
+      animation-duration: 5s;
+      animation-timing-function: ease;
+      animation-delay: 1s;
+      animation-direction: alternate-reverse;
+    }
+    .right{
+         position: relative;
+         left: 35%;
+         top: 50vh;
+         animation-name: right;
+         animation-duration: 5s;
+         animation-timing-function: ease;
+         animation-delay: 1s;
+         animation-direction: alternate-reverse;
+       }
+    .bottom{
+            position: relative;
+            left: 35%;
+            top: 50vh;
+            animation-name: bottom;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+          }
+    @keyframes top {
+      from{
+        transform: translateY(0);
+      }
+      to{
+        transform: translateY(-99vw);
+      }
+    }
+    @keyframes left {
+      from{
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(-70vw);
+      }
+    }
+    @keyframes right {
+      from{
+        transform: translateX(0);
+      }
+      to{
+        transform: translateX(99vw);
+      }
+    }
+    @keyframes bottom {
+      from{
+        transform: translateY(0);
+      }
+      to{
+        transform: translateY(145vw);
+      }
+    }
+    div{
+      color: white;
+    }
+  </style>
+</head>
+<body bgcolor="royalblue">
+ <div class="top">I am suraj kumar.</div>
+ <div class="left">I study in class 7.</div>
+ <div class="right">The name of my school is New era high school.</div>
+ <div class="bottom">I love coding.</div>
+</body>
+</html>
